@@ -1,0 +1,9 @@
+[package]
+name = "my"
+version = "0.1.0"
+authors = ["rustytools"]
+
+[dependencies]
+serde = "1.0.2"
+serde_json = "1.0.1"
+serde_derive = "1.0.2"
