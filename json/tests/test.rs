@@ -16,11 +16,11 @@ fn test_serialize() {
 #[test]
 fn test_deserialize() {
     let st = r#"{
-		"foo": {
-			"foo1": 42,
-			"foo2": "foo"
-		},
-		"boo": "bar"
+        "foo": {
+            "foo1": 42,
+            "foo2": "foo"
+        },
+        "boo": "bar"
     }"#;
     let bar: my::Bar = serde_json::from_str(st).expect(errloc!());
     println!("{:?}", &bar);
