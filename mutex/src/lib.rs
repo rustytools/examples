@@ -17,7 +17,7 @@ impl Worker {
     pub fn do_work(&self) {
         // guard here is used to ensure that first and second
         // printed messages won't be intermingled
-		let cell = self.mx.lock().expect(errloc!());
+        let cell = self.mx.lock().expect(errloc!());
         let before = cell.take();
         println!("{} before: {}", self.num, before);
         cell.set(self.num.to_string());
