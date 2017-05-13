@@ -3,3 +3,5 @@ name = "my"
 version = "0.1.0"
 authors = ["rustytools"]
 
+[dependencies]
+errloc_macros = "0.1.0"
