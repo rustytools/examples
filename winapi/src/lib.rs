@@ -69,7 +69,7 @@ fn print_message(msg: &str) -> Result<i32, std::io::Error> {
 }
 
 #[cfg(not(windows))]
-fn print_message(msg: &str) -> Result<(), Error> {
+fn print_message(msg: &str) -> Result<(), std::io::Error> {
     println!("{}", msg);
     Ok(())
 }
