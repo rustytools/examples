@@ -7,7 +7,7 @@ extern crate my;
 
 #[test]
 fn test_tls() {
-    let mx = std::sync::Arc::new(std::sync::Mutex::new(std::cell::Cell::new(std::string::String::from(""))));
+    let mx = std::sync::Arc::new(std::sync::Mutex::new(std::string::String::from("")));
     let mut vec: std::vec::Vec<std::thread::JoinHandle<u32>> = std::vec::Vec::new();
     for i in 0..32 {
         let mxpass = mx.clone();
