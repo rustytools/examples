@@ -1,4 +1,7 @@
 
+#[macro_use]
+extern crate errloc_macros;
+
 pub struct MySource {
     count: u32
 }
@@ -18,12 +21,7 @@ impl std::io::Read for MySource {
             self.count += 1;
             st.push_str(self.count.to_string().as_str());
             let vec = st.into_bytes();
-            let len = std::cmp::min(buf.len(), vec.len());
-            // cannot borrow mutably
-            //buf.write_all(&vec).expect(errloc!());
-            unsafe {
-                std::ptr::copy(vec.as_ptr(), buf.as_mut_ptr(), len);
-            }
+            let len = vec.as_slice().read(buf).expect(errloc!());
             Ok(len)
         } else {
             Ok(0)
