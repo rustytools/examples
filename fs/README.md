@@ -1,4 +1,5 @@
-Filesystem usage example.
+Filesystem usage example
+------------------------
 
 Run with:
 

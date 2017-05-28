@@ -1,4 +1,5 @@
-Thead local storage example.
+Thead local storage example
+---------------------------
 
 Run with:
 

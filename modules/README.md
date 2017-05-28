@@ -1,4 +1,5 @@
-Modules example.
+Modules example
+---------------
 
 Run with:
 

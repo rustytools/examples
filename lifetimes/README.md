@@ -1,4 +1,5 @@
-Lifetimes usage example.
+Lifetimes usage example
+-----------------------
 
 Run with:
 

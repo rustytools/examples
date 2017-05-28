@@ -1,4 +1,5 @@
-CLI arguments parsing example.
+CLI arguments parsing example
+-----------------------------
 
 Run with:
 

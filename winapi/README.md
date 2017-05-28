@@ -1,4 +1,5 @@
-Windows registry access example.
+Windows registry access example
+-------------------------------
 
 Adjust registry key (hardcoded in `lib.rs`) as required.
 
