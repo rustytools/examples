@@ -7,11 +7,11 @@ fn get_compile_time_var(name: &str) -> &'static str {
         "PATH" => match PATH {
             Some(val) => val,
             None => "DEFAULT_PATH"
-        }
+        },
         "FOO" => match FOO {
             Some(val) => val,
             None => "DEFAULT_FOO"
-        }
+        },
         _ => ""
     }
 }
